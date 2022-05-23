@@ -1,0 +1,3 @@
+Connecting Node.js to OracleDB:
+https://www.oracle.com/database/technologies/appdev/quickstartnodejs.html#macos-tab
+
