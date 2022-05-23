@@ -5,19 +5,20 @@ const express = require('express');
 
 const app = express();
 
+var oracleDB = require('./oracleConnection');
 
 
 
-
-app.get('/', async (request, response) => {
-    response.send( await readFile('./public/hello.html', 'utf8') );
+app.get('/', async (req, res) => {
+    res.send( await readFile('./views/hello.html', 'utf8') );
 });
 
 app.get('/signup', async (request, response) =>{
-    response.send( await readFile('./public/Signup.html', 'utf8'));
+    response.send( await readFile('./views/Signup.html', 'utf8'));
 })
-app.post('/signup', function(req, res){
-    
+app.post('/signup', (req, res) => {
+    oracleDB.signup(req,res);
+
 })
 
 app.listen(process.env.PORT || 3000, () => console.log('App available on port http://localhost:3000'));
