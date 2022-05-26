@@ -5,6 +5,8 @@ const express = require('express');
 
 const app = express();
 
+const http = require('http');
+
 var oracleDB = require('./oracleConnection');
 
 
@@ -21,6 +23,7 @@ app.post('/signup', (req, res) => {
 
 })
 
+//http.createServer(app).listen([80[73.10.169.23]])
 app.listen(process.env.PORT || 3000, () => console.log('App available on port http://localhost:3000'));
 
 

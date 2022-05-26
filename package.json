@@ -1,7 +1,7 @@
 {
   "name": "webdevproject",
   "version": "1.0.0",
-  "description": "",
+  "description": "Website for motivational quotes and messages",
   "main": "index.js",
   "scripts": {
     "devStart": "nodemon index.js"
@@ -15,5 +15,13 @@
   },
   "devDependencies": {
     "nodemon": "^2.0.16"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/purabtpatel/MorningMotivational.git"
+  },
+  "bugs": {
+    "url": "https://github.com/purabtpatel/MorningMotivational/issues"
+  },
+  "homepage": "https://github.com/purabtpatel/MorningMotivational#readme"
 }
