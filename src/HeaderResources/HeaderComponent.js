@@ -3,12 +3,12 @@ import React from 'react'
 function HeaderComponent(props) {
   function toggleTheme()
   {
-    if(props.theme === 'Day')
+    if(props.theme === 'day')
     {
-      props.setTheme('Night')
+      props.setTheme('night')
     }
     else{
-      props.setTheme('Day')
+      props.setTheme('day')
     }
   }
   return (

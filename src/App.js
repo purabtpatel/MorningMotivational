@@ -1,8 +1,9 @@
 import React from "react";
 import HeaderComponent from "./HeaderResources/HeaderComponent";
 import { useState } from "react";
+import './App.css';
 function App() {
-  const [theme,setTheme] = useState('Day');
+  const [theme,setTheme] = useState('day');
   return(
     <>
       <HeaderComponent
@@ -10,7 +11,8 @@ function App() {
       theme = {theme}
       setTheme = {setTheme}
       />
-      <p>{theme}</p>
+      
+      <p className={theme}>{theme}</p>
     </>
   );
 }
