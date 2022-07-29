@@ -1,3 +1,11 @@
+*{
+  margin: 1;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  caret-color: transparent;
+}
+
 .day   { background: #ffb81f; color: black; }
 .night { background: rgb(31, 187, 214); color: white; }
 
@@ -9,12 +17,4 @@
 @media (prefers-color-scheme: light) {
   .day.light-scheme   { background: #ffb11f; color:  rgb(209, 209, 209); }
   .night.light-scheme { background:  #32c4ec; color: rgb(48, 48, 48); }
-}
-
-.day, .night {
-  display: inline-block;
-  padding: 1em;
-  width: 7em;
-  height: 2em;
-  vertical-align: middle;
 }

@@ -1,19 +1,19 @@
 import React from "react";
-import HeaderComponent from "./HeaderResources/HeaderComponent";
+import Header from "./HeaderResources/Header";
 import { useState } from "react";
 import './App.css';
+import { ThemeProvider } from "./ThemeContext";
+import { useTheme, useThemeUpdate } from './ThemeContext'
 function App() {
-  const [theme,setTheme] = useState('day');
+  
   return(
-    <>
-      <HeaderComponent
-      value = {"Temp Variable"}
-      theme = {theme}
-      setTheme = {setTheme}
-      />
+    <ThemeProvider>
+      <Header/>
+      <body className={useTheme()}>
+        
+      </body>
+    </ThemeProvider>
       
-      <p className={theme}>{theme}</p>
-    </>
   );
 }
 
